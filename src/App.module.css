@@ -1,0 +1,33 @@
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  background-color: transparent;
+  padding: 10px 0;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.navButton {
+  all: unset;
+  background: none;
+  border-top: 2px solid #a29375;
+  color: #a29375;
+  font-size: 15px;
+  padding: 0px 20px;
+  cursor: pointer;
+  font-family: "Mostra Nuova", sans-serif;
+  font-weight: 400;
+  transition: 0.3s;
+}
+
+.navButton.active {
+  border-top: 7px solid #a29375;
+}
+
+.menuButton {
+  all: unset;
+  background-color: transparent;
+}

@@ -1,0 +1,199 @@
+.contactSection {
+  background-image: url("../../../elements/images/bg-contact.svg");
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 80px 0;
+  min-height: 100vh;
+  width: 100%;
+  margin-top: -230px;
+}
+
+.contactContainer {
+  max-width: 1200px;
+  margin: 0px auto;
+  padding: 40px 20px;
+  margin-top: 160px;
+}
+
+.conntactHeader {
+  background-image: url("/src/elements/images/header-contact.png");
+}
+
+.contactHeader h1 {
+  font-size: 2.5rem;
+}
+
+.contactHeader img {
+  width: 10%;
+}
+
+.contactInfo {
+  text-align: center;
+  margin-top: 120px;
+}
+
+.contactInfo.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.contactInfo::after {
+  content: "";
+  display: block;
+  width: 3%;
+  height: 3px;
+  background-color: #a29375;
+  margin: 20px auto 5px;
+  transition: background-color 1s ease;
+}
+
+.contactInfo p {
+  font-size: 16px;
+  font-family: "Mostra Nuova", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #a29375;
+  margin-bottom: 5px;
+}
+
+.label {
+  color: black;
+}
+
+.formContainer {
+  width: 70%;
+  margin: 120px auto;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  align-items: start;
+}
+
+.formLeft,
+.formRight {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formRight {
+  margin-top: 20px;
+}
+
+.formGroup input {
+  width: 100%;
+  padding: 10px 0;
+  border: none;
+  border-bottom: 1.5px solid #a29375;
+  background: transparent;
+  outline: none;
+  font-size: 16px;
+  font-family: "Mostra Nuova", sans-serif;
+  font-weight: 400;
+  text-indent: 70px;
+  transition: border-color 0.3s;
+}
+
+.formGroup input:focus {
+  border-color: #555;
+}
+
+.formGroup label {
+  display: block;
+  font-size: 14px;
+  color: #666;
+  text-transform: uppercase;
+  margin-bottom: -30px;
+  margin-left: 5px;
+  font-family: "Mostra Nuova", sans-serif;
+  font-weight: 400;
+}
+
+.formMessage {
+  background: transparent;
+  width: 100%;
+  padding: 10px;
+  border: 1.5px solid #a29375;
+  min-height: 100px;
+  resize: vertical;
+  font-family: "Mostra Nuova", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  text-indent: 70px;
+}
+.errorMessage {
+  color: #ff0033;
+  font-family: "Myriad Pro", sans-serif;
+  font-weight: 400;
+}
+
+.formSubmit {
+  grid-column: span 2;
+  text-align: center;
+  margin-top: 70px;
+}
+
+.btnSubmit {
+  all: unset;
+  width: 100%;
+  display: inline-block;
+  background: transparent;
+  color: #555;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 10px 0;
+  border-bottom: 1.5px solid #a29375;
+  cursor: pointer;
+  font-family: "Mostra Nuova", sans-serif;
+  font-weight: 400;
+  transition: all 0.3s;
+}
+
+.btnSubmit:hover {
+  color: #a29375;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin-top: 200px;
+}
+
+.footer img {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.footer p {
+  font-family: "Myriad Pro", sans-serif;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+
+/*HEADER*/
+
+.head {
+  display: flex;
+  background-image: url("../../../elements/images/bg-contact-circles.svg");
+  background-size: 100% 170%;
+  background-position: -100px -100px;
+  background-repeat: no-repeat;
+  height: 300px;
+}
+
+@media (max-width: 768px) {
+  .formGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .formSubmit {
+    grid-column: span 1;
+  }
+}

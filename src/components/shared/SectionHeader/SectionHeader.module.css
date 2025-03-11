@@ -1,0 +1,36 @@
+.header {
+  height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header h1 {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: #464647;
+  font-family: "Mostra Nuova", sans-serif;
+  font-weight: 700;
+}
+
+.header h5 {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 15px;
+  color: #464647;
+  font-family: "Myriad Pro", sans-serif;
+  font-weight: 400;
+  letter-spacing: 7px;
+}
+
+.header img {
+  display: block;
+  width: 20%;
+  margin: 0 auto;
+}

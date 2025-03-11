@@ -1,0 +1,55 @@
+@font-face {
+  font-family: "Mostra Nuova";
+  src: url("../elements/fonts/MostraNuova-Regular.woff") format("woff"),
+    url("../elements/fonts/MostraNuova-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Mostra Nuova";
+  src: url("../elements/fonts/MostraNuova-Bold.woff") format("woff"),
+    url("../elements/fonts/MostraNuova-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Mostra Nuova";
+  src: url("../elements/fonts/MostraNuova-Light.woff") format("woff"),
+    url("../elements/fonts/MostraNuova-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Myriad Pro";
+  src: url("../elements/fonts/MyriadPro-Regular.woff") format("woff"),
+    url("../elements/fonts/MyriadPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Myriad Pro";
+  src: url("../elements/fonts/MyriadPro-Light.woff") format("woff"),
+    url("../elements/fonts/MyriadPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Myriad Pro";
+  src: url("../elements/fonts/MyriadPro-It.woff") format("woff"),
+    url("../elements/fonts/MyriadPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Myriad Pro";
+  src: url("../elements/fonts/MyriadPro-LightIt.woff") format("woff"),
+    url("../elements/fonts/MyriadPro-LightIt.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}

@@ -1,0 +1,147 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f8f9fa;
+  box-shadow: none;
+  transition: transform 0.3s ease;
+  z-index: 1000;
+  transform: translateX(-100%);
+  opacity: 0;
+  visibility: hidden;
+  display: flex;
+}
+
+.sidebar.open {
+  transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+/*HEADER SIDEBAR */
+
+.headerMenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
+.headerMenu h2 {
+  margin: 0;
+  padding: 0;
+  font-family: "Mostra Nuova", sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #a29375;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.closeButton {
+  all: unset;
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.content {
+  width: 50%;
+}
+
+.contentMenu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px;
+  gap: 0px 30px;
+  justify-content: center;
+  max-height: 300px;
+  margin-top: 100px;
+}
+
+.menuElement {
+  display: flex;
+  flex-direction: column;
+  width: 90px;
+  padding: 20px;
+}
+
+.menuElement img {
+  width: 60%;
+  border-radius: 100%;
+  margin: 0 auto;
+  filter: grayscale(90%);
+  transition: filter 1s ease;
+  transition: border 1s ease;
+}
+
+.menuElement:hover img {
+  filter: grayscale(0%);
+}
+
+.menuElement p {
+  font-family: "Myriad Pro", sans-serif;
+  font-weight: 300;
+}
+.menuNumber {
+  color: #a29375;
+  text-align: right;
+}
+.menuLabel {
+  border-top: 4px solid #a29375;
+  padding-top: 10px;
+  text-transform: uppercase;
+  margin-top: 5px;
+  text-align: left;
+  font-size: 0.8rem;
+}
+
+.menuElement:hover .menuLabel {
+  border-color: #296299;
+}
+
+.image {
+  width: 50%;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 600px) {
+  .image {
+    display: none;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .contentMenu {
+    margin-top: 50px;
+    justify-content: center;
+    max-height: none;
+    overflow-y: auto;
+  }
+
+  .menuElement {
+    width: 80px;
+    padding: 15px;
+  }
+
+  .headerMenu {
+    margin-bottom: 40px;
+    padding: 0 15px;
+  }
+
+  .headerMenu h2 {
+    margin-left: 0;
+  }
+}
